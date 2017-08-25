@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CoinCheck.iml" filepath="$PROJECT_DIR$/.idea/modules/CoinCheck.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CoinCheck_main.iml" filepath="$PROJECT_DIR$/.idea/modules/CoinCheck_main.iml" group="CoinCheck" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CoinCheck_test.iml" filepath="$PROJECT_DIR$/.idea/modules/CoinCheck_test.iml" group="CoinCheck" />
+    </modules>
+  </component>
+</project>
