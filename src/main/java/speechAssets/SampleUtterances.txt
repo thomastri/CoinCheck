@@ -1,0 +1,14 @@
+GetNewFactIntent tell me about {coin}
+GetNewFactIntent give me data about {coin}
+GetNewFactIntent tell me {coin}
+GetNewFactIntent about {coin}
+GetNewFactIntent give me the value of {coin}
+GetNewFactIntent give me the price of {coin}
+GetNewFactIntent give me the info of {coin}
+GetNewFactIntent give me the details of {coin}
+GetNewFactIntent give me the data on {coin}
+GetNewFactIntent tell me the value of {coin}
+GetNewFactIntent tell me the price of {coin}
+GetNewFactIntent tell me the info of {coin}
+GetNewFactIntent tell me the details of {coin}
+GetNewFactIntent tell me the data on {coin}

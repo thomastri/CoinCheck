@@ -1,0 +1,289 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "GetCoinIntent",
+      "samples": [
+        "tell me about {coin}",
+        "give me data about {coin}",
+        "tell me {coin}",
+        "about {coin}",
+        "give me the value of {coin}",
+        "give me the price of {coin}",
+        "give me the info of {coin}",
+        "give me the details of {coin}",
+        "give me the data on {coin}",
+        "tell me the value of {coin}",
+        "tell me the price of {coin}",
+        "tell me the info of {coin}",
+        "tell me the details of {coin}",
+        "tell me the data on {coin}"
+      ],
+      "slots": [
+        {
+          "name": "coin",
+          "type": "LIST_OF_COINS",
+          "samples": [
+            "{coin}",
+            "i'd like to know about {coin}",
+            "tell me about {coin}",
+            "what is the price of {coin}",
+            "how much is {coin} worth",
+            "get me data on {coin}"
+          ]
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "LIST_OF_COINS",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "Bitcoin",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Ethereum",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Litecoin",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Bitcoin Cash",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Ripple",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Dash",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "NEM",
+            "synonyms": [
+              "N-E-M"
+            ]
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "IOTA",
+            "synonyms": [
+              "I-O-T-A"
+            ]
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Monero",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "NEO",
+            "synonyms": [
+              "N-E-O"
+            ]
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Ethereum Classic",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "HShare",
+            "synonyms": [
+              "H Share"
+            ]
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Qtum",
+            "synonyms": [
+              "Q Tum"
+            ]
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "OmiseGo",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "BitConnect",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Lisk",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Stratis",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "ZCash",
+            "synonyms": [
+              "Z-Cash"
+            ]
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Waves",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "EOS",
+            "synonyms": [
+              "E-O-S"
+            ]
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "TenX",
+            "synonyms": [
+              "Ten X"
+            ]
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Bitshares",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Steem",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Tether",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Bytecoin",
+            "synonyms": []
+          }
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "Elicit.Intent-GetCoinIntent.IntentSlot-coin",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "what coin would you like the data of?"
+        },
+        {
+          "type": "PlainText",
+          "value": "i need the name of a crypto coin in order to continue"
+        },
+        {
+          "type": "PlainText",
+          "value": "please tell me the name of which crypto currency you'd like data on so that i can go fetch it like a dog"
+        }
+      ]
+    }
+  ],
+  "dialog": {
+    "version": "1.0",
+    "intents": [
+      {
+        "name": "GetCoinIntent",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "coin",
+            "type": "LIST_OF_COINS",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-GetCoinIntent.IntentSlot-coin"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
