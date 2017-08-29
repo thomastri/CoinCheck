@@ -60,7 +60,7 @@ public class CoinCheckSpeechlet implements Speechlet {
     }
 
 
-    public static String formatUSDString(String usd) {
+    static String formatUSDString(String usd) {
         StringBuilder usdBuilder = new StringBuilder();
         usdBuilder.append(usd.substring(0, usd.indexOf('.')));
         usdBuilder.append(" dollars and ");

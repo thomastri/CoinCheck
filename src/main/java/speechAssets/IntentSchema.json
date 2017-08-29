@@ -28,7 +28,18 @@
         "tell me the price of {coin}",
         "tell me the info of {coin}",
         "tell me the details of {coin}",
-        "tell me the data on {coin}"
+        "tell me the data on {coin}",
+        "how much is {coin} worth",
+        "what is the price of {coin}",
+        "what is the value of {coin}",
+        "what is {coin} worth",
+        "how much is {coin}",
+        "what's the price of {coin}",
+        "what the price of {coin} is",
+        "what the value of {coin} is",
+        "where {coin} is",
+        "what {coin} is at",
+        "how many dollars is {coin}"
       ],
       "slots": [
         {
